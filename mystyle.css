@@ -1,0 +1,18 @@
+/* Style Sheet for voting page est. 2014 */
+
+body{
+    background-color: #666666
+}
+
+table.center{
+margin-left: auto;
+margin-right:auto;
+margin-top: 10px;
+}
+
+.smallWarn{
+font:Verdana, Geneva, sans-serif;
+font-size:11px;
+color:#666;
+}
+
