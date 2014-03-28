@@ -1,39 +1,39 @@
-<object align="middle">
-<form name="htmlform" method="post" action="html_form_send.php" >
-<table width="450px">
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name">First Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="50" size="30">
- </td>
-</tr>
- 
-<tr>
- <td valign="top">
-  <label for="last_name">Last Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="50" size="30">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="RIN">RIN number *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="RIN" maxlength="9" size="30">
- </td>
- 
-</tr>
-
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">
- </td>
-</tr>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>RPI Votes!</title>
+</head>
+<body>
+<div align="center">
+<h1>Welcome to the RPI voting system!</h1>
+<br>
+</div>
+<form name="form1" method="post" action="login.php">
+  <table width="300" border="0" align="center" cellpadding="0" cellspacing="1" bgcolor="#CCCCCC">
+    <td>
+	<tr>
+	  <td colspan="3" align="center"><strong>Vote Admin Login </strong></td>
+	</tr>
+	  <tr>
+	    <td width="115">RIN</td>
+	    <td width="6">:</td>
+	    <td width="294"><input name="rin" type="number" id="rin" maxlength="9"></td>
+	  </tr>
+	  <tr>
+	    <td>Last name</td>
+	    <td>:</td>
+	    <td><input name="name_last" type="text" id="name_last" maxlength="50"></td>
+	  </tr>
+	  <tr>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td><input type="submit" name="Submit" value="Login"></td>
+	  </tr>
+	</table>
+      </td>
+    </form>
+  </tr>
 </table>
-</form>
-</object>
+</body>
+
