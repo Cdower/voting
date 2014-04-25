@@ -3,10 +3,10 @@
 session_name('admin_account'); //for named sessions
 session_start();
 
-if(!isset($_SESSION['sess_admin_id']) /*|| (trim($_SESSION['sess_admin_id']) == ''*/) {
+if(!isset($_SESSION['sess_admin_id']) /*|| (trim($_SESSION['sess_admin_id']) == ""*/) {
   header('Location: index.html');
   }else{
-
+  //Echo $_SESSION['sess_admin_name'];
 ?>
 
 <html>
@@ -18,23 +18,29 @@ if(!isset($_SESSION['sess_admin_id']) /*|| (trim($_SESSION['sess_admin_id']) == 
   
   <body>
 
-  <h1> Yolo!, <?php echo $_SESSION["sess_admin_name"] ?></h1>
+  <h1> Hello, <?php Echo $_SESSION['sess_admin_name'] ?></h1>
     
     <ul class="vertical_menu">
       <li>
 	<a href="dummy.html" title="Back to the home page">Home</a>
       </li>
       <li>
-	<a href="dummy.html" title="The basics of dog nutrition">The basics</a>
+	<a href="dummy.html" title="Upload CSV of students, their year, and RINs">Upload CSV</a>
       </li>
       <li>
-	<a href="dummy.html" title="Articles on dog nutrition">Articles</a>
+	<a href="dummy.html" title="Articles on dog nutrition">Edit Positions</a>
       </li>
       <li>
-	<a href="dummy.html" title="Products we recommend">Products</a>
+	<a href="dummy.html" title="Products we recommend">Edit Candidates</a>
       </li>
       <li>
-	<a href="dummy.html" title="Our bloggy nutrition updates">Blog</a>
+	<a href="dummy.html" title="Our bloggy nutrition updates">View Results</a>
+      </li>
+      <li>
+	<a href="dummy.html" title="Our bloggy nutrition updates">Start Voting</a>
+      </li>
+      <li>
+	<a href="logout.php" title="Logout Here">Logout</a>
       </li>
     </ul>
     
